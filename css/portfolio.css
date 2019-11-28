@@ -1083,7 +1083,7 @@
 
     /*--skill--*/
     .content_skill {
-        top: 10%;
+        top: 75px;
     }
     .circlechart {
         padding: 0 !important;
@@ -1114,7 +1114,7 @@
     /*    --port1--*/
 
     .content_port1 {
-        top: 10%;
+        top: 75px;
         width: 100%;
     }
 
@@ -1175,7 +1175,7 @@
     /*    --port2--*/
 
     .content_Portfolio {
-        top: 10%;
+        top: 75px;
         width: 100%;
     }
 

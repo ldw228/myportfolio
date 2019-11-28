@@ -1005,9 +1005,9 @@
     }
 
     .logo {
-        position: absolute;
+        position: fixed;
         margin-top: 5px;
-        left: 40%;
+        left: 35%;
         
     }
 

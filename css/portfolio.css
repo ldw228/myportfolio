@@ -260,7 +260,6 @@
 
 .about_img {
     position: absolute;
-    width: 100%;
     margin: 10.5% 0 0 12%;
 }
 
@@ -997,7 +996,8 @@
 
     /*    --about--*/
     .header {
-        top: 0;
+        top: 0px;
+        
     }
 
     .head {
@@ -1005,9 +1005,10 @@
     }
 
     .logo {
-
-        margin-top: 5px;
-        left: 35%;
+        position: absolute;
+        margin-top: 10px;
+        left: 40%;
+        
     }
 
     .content_about {
@@ -1015,18 +1016,24 @@
     }
 
     .about_wrap {
-        width: 150%;
-        margin: 25% 0 0 0;
+        width: 80%;
+        margin: 25% 0 0 12%;
     }
-
+    .about_img {
+        margin: 15% 0 0 12%;
+    }
+    .about_img img {
+        width: 70%;
+    }
     .about_img_line {
-        width: 27%;
-        height: 85%;
-        margin: 4.5% 0 0 28%;
+        width: 50%;
+    height: 90%;
+    margin: 5% 0 0 43%;
     }
 
     .about_text {
-        margin: 66% 0 0 9%;
+        margin: 10% 0 0 5%;
+        top: 100%;
     }
 
     .about_text h2 {
@@ -1051,7 +1058,9 @@
     .pro_title {
         margin-bottom: 2%
     }
-
+    .pro_article {
+        height: 93%;
+    }
     .pro_article ul {
         width: 50%;
         height: 40%;
@@ -1083,16 +1092,9 @@
         padding: 0 !important;
         width: 50% !important;
     }
-
-    .circle-chart {
-        width: 140px !important;
-        height: 180px !important;
-    }
-
     #progress {
         margin-top: 120px;
     }
-
     canvas {
 
         width: 140px !important;
@@ -1100,23 +1102,14 @@
         margin-bottom: 16%;
         top: -3vh !important;
     }
-
     .chart .percent {
-        top: -18% !important;
-
+        top: 7% !important;
+        left: 80% !important;
         width: 150px !important;
         height: 150px !important;
         margin-bottom: 16%;
     }
-
-    .chart .percent {
-        top: 10% !important;
-        left: 84% !important;
-        font-size: 30px !important;
-    }
-
     .chart p {
-
         top: 0% !important;
         font-size: 15px !important;
     }

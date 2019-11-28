@@ -874,6 +874,7 @@
         height: 550px;
 
     }
+
     .content_Portfolio {
         top: 15%;
         height: 768px;
@@ -990,22 +991,29 @@
 
 
 @media all and (max-width:739px) {
+    body {
+        overflow: hidden;
+    }
 
     /*    --about--*/
     .header {
         top: 0;
     }
+
     .head {
         display: none;
     }
+
     .logo {
-        
+
         margin-top: 5px;
         left: 35%;
     }
+
     .content_about {
         top: 10%;
     }
+
     .about_wrap {
         width: 150%;
         margin: 25% 0 0 0;
@@ -1016,8 +1024,9 @@
         height: 85%;
         margin: 4.5% 0 0 28%;
     }
+
     .about_text {
-        margin: 65% 0 0 8%;
+        margin: 66% 0 0 9%;
     }
 
     .about_text h2 {
@@ -1070,22 +1079,6 @@
     .content_skill {
         top: 10%;
     }
-
-    .skill_title {}
-
-
-    .about_text {
-        margin: 64% 0 0 5%;
-    }
-    
-    /*--profile--*/
-    
-    .pro_icon {
-        display: none;
-    }
-    
-    /*--skill--*/
-    
     .circlechart {
         padding: 0 !important;
         width: 50% !important;
@@ -1157,7 +1150,7 @@
 
     .port1_wrap {
         width: 413px;
-        height: 520px;
+        height: 545px;
         top: 70px;
         right: 0;
         padding: 10px 20px;
@@ -1176,6 +1169,7 @@
     .port1_artcle2 {
         font-size: 13px;
         line-height: 150%;
+        padding-bottom: 20px;
     }
 
     .port1_text_title1 {
@@ -1185,7 +1179,7 @@
 
     .artcle2-1 {
         width: 70%;
-        
+
     }
 
     /*    --port2--*/
@@ -1347,5 +1341,3 @@
         font-size: 14px;
     }
 }
-
-

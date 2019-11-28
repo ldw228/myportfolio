@@ -1143,17 +1143,17 @@
         height: 545px;
         top: 70px;
         right: 0;
-        padding: 10px 20px;
+        padding: 20px 20px;
     }
 
     .Project_text_title1 {
         font-size: 28px;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
 
     .port1_artcle1 {
         font-size: 16px;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
 
     .port1_artcle2 {
@@ -1227,13 +1227,13 @@
     .Portfolio_text_wrap1 {
         left: auto;
         right: 0;
-        bottom: 420px;
+        bottom: 440px;
     }
 
     .Portfolio_text_wrap2 {
         right: auto;
         left: 0;
-        top: 290px;
+        top: 310px;
     }
 
     .Portfolio_text_title1 {
@@ -1268,7 +1268,7 @@
 
     /*    --project--*/
     .content_Project {
-        top: 10%;
+        top: 13%;
         width: 100%;
     }
 

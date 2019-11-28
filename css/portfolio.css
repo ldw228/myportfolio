@@ -990,10 +990,7 @@
 
 
 @media all and (max-width:739px) {
-    body {
-        overflow: hidden;
-    }
-
+    
     /*    --about--*/
     .header {
         top: 0px;

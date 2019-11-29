@@ -71,34 +71,44 @@
         .head .menu.on>a:after {
             width: 100%;
         }
+
     </style>
     <script>
-                $(function($) {
-        			$(".box").on("mousewheel", function(e) {
-                          e.preventDefault();
-                          var box1Top = $('.box1').offset().top;
-                          var box6Top = $('.box6').offset().top;
-        
-                          var delta = 0;
-        
-                          delta = e.originalEvent.wheelDelta / 120;
-                          var moveTop = null;
-        
-                          if (delta < 0) { 
-                                try {
-                                    moveTop = $(this).next().offset().top;
-                                } catch (e) { moveTop =box6Top; }
-                                
-                          } else {
-                                try {
-                                    moveTop = $(this).prev().offset().top;
-                                } catch (e) {moveTop =box1Top;}
-                          }
-                          if (box6Top == moveTop){moveTop = box6Top};
-        
-                          $("html,body").stop().animate({"scrollTop": moveTop + "px"}, 1000);
-                    });
-                });
+        $(function($) {
+            $(".box").on("mousewheel", function(e) {
+                e.preventDefault();
+                var box1Top = $('.box1').offset().top;
+                var box6Top = $('.box6').offset().top;
+
+                var delta = 0;
+
+                delta = e.originalEvent.wheelDelta / 120;
+                var moveTop = null;
+
+                if (delta < 0) {
+                    try {
+                        moveTop = $(this).next().offset().top;
+                    } catch (e) {
+                        moveTop = box6Top;
+                    }
+
+                } else {
+                    try {
+                        moveTop = $(this).prev().offset().top;
+                    } catch (e) {
+                        moveTop = box1Top;
+                    }
+                }
+                if (box6Top == moveTop) {
+                    moveTop = box6Top
+                };
+
+                $("html,body").stop().animate({
+                    "scrollTop": moveTop + "px"
+                }, 1000);
+            });
+        });
+
     </script>
     <script>
         $(function($) {
@@ -111,7 +121,12 @@
                     scrollTop: s
                 }, 1000);
             });
-
+            
+//            var timeOut = setInterval(function() {
+//                $(".content_skill>#progress").load("progresscircle.html");
+//                clearInterval(timeOut);
+//            }, 5000);
+            
             //            $(".box").each(function() {
             //                $(this).on("mousewheel", function(e) {
             //                    e.preventDefault();
@@ -156,7 +171,7 @@
                     };
                 }
 
-                //파이를 부르는 스크립트
+                //                //파이를 부르는 스크립트
                 var s_top = $(".box3").offset().top;
                 if (scroll == s_top) {
                     $(".content_skill>#progress").load("progresscircle.html");
@@ -172,6 +187,7 @@
             });
 
         });
+
     </script>
     <script>
         $(function() {
@@ -181,6 +197,7 @@
                 duration: 1000,
             });
         });
+
     </script>
 
 </head>
@@ -378,4 +395,6 @@
         </div>
     </div>
 
-</body></html>
+</body>
+
+</html>
